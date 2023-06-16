@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "jackhodgkiss_uk"
+version = "0.1.0"
+description = "Personal blog built with Pelican"
+authors = ["Jack Hodgkiss <identity@jackhodgkiss.uk>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.11"
+pelican = {extras = ["markdown"], version = "^4.8.0"}
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.2"
+pylint = "^2.17.4"
+pre-commit = "^3.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
